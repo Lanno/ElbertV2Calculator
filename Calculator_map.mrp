@@ -1,0 +1,1781 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Mapping Report File for Design 'Calculator'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off
+-c 100 -o Calculator_map.ncd Calculator.ngd Calculator.pcf 
+Target Device  : xc3s50a
+Target Package : tq144
+Target Speed   : -5
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Thu Jun 08 01:46:16 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:           688 out of   1,408   48%
+  Number of 4 input LUTs:               418 out of   1,408   29%
+Logic Distribution:
+  Number of occupied Slices:            469 out of     704   66%
+    Number of Slices containing only related logic:     469 out of     469 100%
+    Number of Slices containing unrelated logic:          0 out of     469   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         459 out of   1,408   32%
+    Number used as logic:               418
+    Number used as a route-thru:         41
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 30 out of     108   27%
+  Number of BUFGMUXs:                     3 out of      24   12%
+
+Average Fanout of Non-Clock Nets:                1.79
+
+Peak Memory Usage:  250 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network displayProcess/updater/divider1/quotient<7> has
+   no load.
+INFO:LIT:395 - The above info message is repeated 71 more times for the
+   following (max. 5 shown):
+   displayProcess/updater/divider1/quotient<6>,
+   displayProcess/updater/divider1/quotient<5>,
+   displayProcess/updater/divider1/quotient<4>,
+   displayProcess/updater/divider1/quotient<3>,
+   displayProcess/updater/divider1/quotient<2>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:159 - Net Timing constraints on signal clock are pushed forward
+   through input buffer.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 312 block(s) removed
+ 191 block(s) optimized away
+ 304 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "displayProcess/updater/divider1/quotient<7>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider1/quotient<6>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider1/quotient<5>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider1/quotient<4>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider1/quotient<3>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider1/quotient<2>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider1/quotient<1>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider1/quotient<0>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000025" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk000001eb" (BUF)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig00000070" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000044" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000026" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000007" (FF)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig00000027" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider1/blk00000003/blk000001ec" (BUF)
+removed.
+    The signal "displayProcess/updater/divider1/blk00000003/sig0000006f" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000043" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000028" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000008" (FF)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig00000029" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider1/blk00000003/blk000001ed" (BUF)
+removed.
+    The signal "displayProcess/updater/divider1/blk00000003/sig0000006e" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000042" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig0000002a" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000009" (FF)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig0000002b" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider1/blk00000003/blk000001ee" (BUF)
+removed.
+    The signal "displayProcess/updater/divider1/blk00000003/sig0000006d" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000041" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig0000002c" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk0000000a" (FF)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig0000002d" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider1/blk00000003/blk000001ef" (BUF)
+removed.
+    The signal "displayProcess/updater/divider1/blk00000003/sig0000006c" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000040" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig0000002e" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk0000000b" (FF)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig0000002f" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider1/blk00000003/blk000001f0" (BUF)
+removed.
+    The signal "displayProcess/updater/divider1/blk00000003/sig0000006b" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider1/blk00000003/blk0000003f" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000030" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk0000000c" (FF)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig00000031" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider1/blk00000003/blk000001f1" (BUF)
+removed.
+    The signal "displayProcess/updater/divider1/blk00000003/sig0000006a" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider1/blk00000003/blk0000003e" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000033" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk0000000e" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000034" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk0000000f" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000035" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000010" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000036" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000011" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000037" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000012" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig0000003d" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000016" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig0000003e" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000017" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig0000003f" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000018" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000040" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000019" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000046" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk0000001e" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000047" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk0000001f" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000048" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000020" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig0000004f" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000026" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000050" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000027" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000058" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk0000002e" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000071" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000045" (FF)
+removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig000000d2" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk000000a8" (FF)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig000000d5" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig000000f6" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk000000bb" (FF)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig000000fa" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig0000011b" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk000000ce" (FF)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig0000011f" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000140" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk000000e1" (FF)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig00000144" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig00000165" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk000000f4" (FF)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig00000169" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig0000018a" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000107" (FF)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig0000018e" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig000001af" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk0000011a" (FF)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig000001b3" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig000001d4" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk0000012d" (FF)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig000001d8" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig000001e5" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000177" (MUX)
+removed.
+  The signal "displayProcess/updater/divider1/blk00000003/sig000001e6" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000184" (MUX)
+removed.
+    The signal "displayProcess/updater/divider1/blk00000003/sig00000200" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000191" (FF)
+removed.
+      The signal "displayProcess/updater/divider1/blk00000003/sig00000205" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000185" (XOR)
+removed.
+    The signal "displayProcess/updater/divider1/blk00000003/sig00000201" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider1/blk00000003/blk00000192" (FF)
+removed.
+      The signal "displayProcess/updater/divider1/blk00000003/sig00000206" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider1/blk00000003/sig000001ff" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/fractional<7>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider2/fractional<6>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider2/fractional<5>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider2/fractional<4>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider2/fractional<3>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider2/fractional<2>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider2/fractional<1>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider2/fractional<0>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig00000074" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000189" (AND)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001e5" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000177" (MUX)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig000001e6" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000184" (MUX)
+removed.
+      The signal "displayProcess/updater/divider2/blk00000003/sig00000200" is
+sourceless and has been removed.
+       Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000191" (FF)
+removed.
+        The signal "displayProcess/updater/divider2/blk00000003/sig00000205" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000185" (XOR)
+removed.
+      The signal "displayProcess/updater/divider2/blk00000003/sig00000201" is
+sourceless and has been removed.
+       Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000192" (FF)
+removed.
+        The signal "displayProcess/updater/divider2/blk00000003/sig00000206" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk000001e3" (ROM)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001e3" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000176" (XOR)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig000001e4" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000193" (FF)
+removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig00000076" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000018a" (AND)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001ea" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000179" (MUX)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig000001e2" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk000001e2" (ROM)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001e8" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000178" (XOR)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig000001e9" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000194" (FF)
+removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig00000078" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000018b" (AND)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001ee" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000017b" (MUX)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig000001e7" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk000001e1" (ROM)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001ec" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000017a" (XOR)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig000001ed" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000195" (FF)
+removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig0000007a" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000018c" (AND)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001f2" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000017d" (MUX)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig000001eb" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk000001e0" (ROM)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001f0" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000017c" (XOR)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig000001f1" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000196" (FF)
+removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig0000007c" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000018d" (AND)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001f6" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000017f" (MUX)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig000001ef" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk000001df" (ROM)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001f4" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000017e" (XOR)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig000001f5" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000197" (FF)
+removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig0000007e" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000018e" (AND)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001fa" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000181" (MUX)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig000001f3" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk000001de" (ROM)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001f8" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000180" (XOR)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig000001f9" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000198" (FF)
+removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig00000080" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000018f" (AND)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001fe" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000183" (MUX)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig000001f7" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk000001dd" (ROM)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001fc" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000182" (XOR)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig000001fd" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000199" (FF)
+removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig00000082" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000190" (AND)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig00000204" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000187" (MUX)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig000001fb" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk000001dc" (ROM)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig00000202" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000186" (XOR)
+removed.
+    The signal "displayProcess/updater/divider2/blk00000003/sig00000203" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000019a" (FF)
+removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig000000d2" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk000000a8" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000000d5" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig000000f6" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk000000bb" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000000fa" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig0000011b" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk000000ce" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig0000011f" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig00000140" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk000000e1" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig00000144" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig00000165" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk000000f4" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig00000169" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig0000018a" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000107" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig0000018e" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig000001af" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000011a" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001b3" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig000001b9" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000012f" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001da" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig000001bc" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000130" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001db" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig000001bf" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000131" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001dc" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig000001c2" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000132" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001dd" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig000001c5" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000133" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001de" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig000001c8" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000134" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001df" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig000001cb" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000135" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001e0" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig000001d4" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk0000012d" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001d8" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig000001d7" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider2/blk00000003/blk00000136" (FF)
+removed.
+  The signal "displayProcess/updater/divider2/blk00000003/sig000001e1" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider2/blk00000003/sig000001ff" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider3/quotient<7>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider3/quotient<6>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider3/quotient<5>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider3/quotient<4>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider3/quotient<3>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider3/quotient<2>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider3/quotient<1>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider3/quotient<0>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000025" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk000001eb" (BUF)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig00000070" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000044" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000026" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000007" (FF)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig00000027" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider3/blk00000003/blk000001ec" (BUF)
+removed.
+    The signal "displayProcess/updater/divider3/blk00000003/sig0000006f" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000043" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000028" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000008" (FF)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig00000029" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider3/blk00000003/blk000001ed" (BUF)
+removed.
+    The signal "displayProcess/updater/divider3/blk00000003/sig0000006e" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000042" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig0000002a" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000009" (FF)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig0000002b" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider3/blk00000003/blk000001ee" (BUF)
+removed.
+    The signal "displayProcess/updater/divider3/blk00000003/sig0000006d" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000041" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig0000002c" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk0000000a" (FF)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig0000002d" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider3/blk00000003/blk000001ef" (BUF)
+removed.
+    The signal "displayProcess/updater/divider3/blk00000003/sig0000006c" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000040" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig0000002e" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk0000000b" (FF)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig0000002f" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider3/blk00000003/blk000001f0" (BUF)
+removed.
+    The signal "displayProcess/updater/divider3/blk00000003/sig0000006b" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider3/blk00000003/blk0000003f" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000030" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk0000000c" (FF)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig00000031" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider3/blk00000003/blk000001f1" (BUF)
+removed.
+    The signal "displayProcess/updater/divider3/blk00000003/sig0000006a" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider3/blk00000003/blk0000003e" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000033" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk0000000e" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000034" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk0000000f" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000035" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000010" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000036" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000011" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000037" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000012" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig0000003d" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000016" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig0000003e" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000017" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig0000003f" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000018" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000040" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000019" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000046" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk0000001e" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000047" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk0000001f" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000048" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000020" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig0000004f" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000026" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000050" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000027" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000058" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk0000002e" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000071" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000045" (FF)
+removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig000000d2" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk000000a8" (FF)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig000000d5" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig000000f6" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk000000bb" (FF)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig000000fa" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig0000011b" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk000000ce" (FF)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig0000011f" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000140" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk000000e1" (FF)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig00000144" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig00000165" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk000000f4" (FF)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig00000169" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig0000018a" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000107" (FF)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig0000018e" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig000001af" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk0000011a" (FF)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig000001b3" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig000001d4" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk0000012d" (FF)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig000001d8" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig000001e5" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000177" (MUX)
+removed.
+  The signal "displayProcess/updater/divider3/blk00000003/sig000001e6" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000184" (MUX)
+removed.
+    The signal "displayProcess/updater/divider3/blk00000003/sig00000200" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000191" (FF)
+removed.
+      The signal "displayProcess/updater/divider3/blk00000003/sig00000205" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000185" (XOR)
+removed.
+    The signal "displayProcess/updater/divider3/blk00000003/sig00000201" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider3/blk00000003/blk00000192" (FF)
+removed.
+      The signal "displayProcess/updater/divider3/blk00000003/sig00000206" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider3/blk00000003/sig000001ff" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/fractional<7>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider4/fractional<6>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider4/fractional<5>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider4/fractional<4>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider4/fractional<3>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider4/fractional<2>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider4/fractional<1>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider4/fractional<0>" is sourceless and has
+been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig00000074" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000189" (AND)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001e5" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000177" (MUX)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig000001e6" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000184" (MUX)
+removed.
+      The signal "displayProcess/updater/divider4/blk00000003/sig00000200" is
+sourceless and has been removed.
+       Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000191" (FF)
+removed.
+        The signal "displayProcess/updater/divider4/blk00000003/sig00000205" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000185" (XOR)
+removed.
+      The signal "displayProcess/updater/divider4/blk00000003/sig00000201" is
+sourceless and has been removed.
+       Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000192" (FF)
+removed.
+        The signal "displayProcess/updater/divider4/blk00000003/sig00000206" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk000001e3" (ROM)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001e3" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000176" (XOR)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig000001e4" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000193" (FF)
+removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig00000076" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000018a" (AND)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001ea" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000179" (MUX)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig000001e2" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk000001e2" (ROM)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001e8" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000178" (XOR)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig000001e9" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000194" (FF)
+removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig00000078" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000018b" (AND)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001ee" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000017b" (MUX)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig000001e7" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk000001e1" (ROM)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001ec" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000017a" (XOR)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig000001ed" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000195" (FF)
+removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig0000007a" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000018c" (AND)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001f2" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000017d" (MUX)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig000001eb" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk000001e0" (ROM)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001f0" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000017c" (XOR)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig000001f1" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000196" (FF)
+removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig0000007c" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000018d" (AND)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001f6" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000017f" (MUX)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig000001ef" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk000001df" (ROM)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001f4" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000017e" (XOR)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig000001f5" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000197" (FF)
+removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig0000007e" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000018e" (AND)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001fa" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000181" (MUX)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig000001f3" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk000001de" (ROM)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001f8" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000180" (XOR)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig000001f9" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000198" (FF)
+removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig00000080" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000018f" (AND)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001fe" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000183" (MUX)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig000001f7" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk000001dd" (ROM)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001fc" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000182" (XOR)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig000001fd" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000199" (FF)
+removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig00000082" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000190" (AND)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig00000204" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000187" (MUX)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig000001fb" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk000001dc" (ROM)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig00000202" is
+sourceless and has been removed.
+   Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000186" (XOR)
+removed.
+    The signal "displayProcess/updater/divider4/blk00000003/sig00000203" is
+sourceless and has been removed.
+     Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000019a" (FF)
+removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig000000d2" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk000000a8" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000000d5" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig000000f6" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk000000bb" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000000fa" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig0000011b" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk000000ce" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig0000011f" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig00000140" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk000000e1" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig00000144" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig00000165" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk000000f4" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig00000169" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig0000018a" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000107" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig0000018e" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig000001af" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000011a" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001b3" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig000001b9" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000012f" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001da" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig000001bc" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000130" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001db" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig000001bf" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000131" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001dc" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig000001c2" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000132" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001dd" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig000001c5" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000133" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001de" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig000001c8" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000134" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001df" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig000001cb" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000135" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001e0" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig000001d4" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk0000012d" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001d8" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig000001d7" is
+sourceless and has been removed.
+ Sourceless block "displayProcess/updater/divider4/blk00000003/blk00000136" (FF)
+removed.
+  The signal "displayProcess/updater/divider4/blk00000003/sig000001e1" is
+sourceless and has been removed.
+The signal "displayProcess/updater/divider4/blk00000003/sig000001ff" is
+sourceless and has been removed.
+Unused block "displayProcess/updater/divider1/blk00000001" (ONE) removed.
+Unused block "displayProcess/updater/divider1/blk00000002" (ZERO) removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk00000006" (FF)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk0000000d" (FF)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk00000015" (FF)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk0000001d" (FF)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk00000025" (FF)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk0000002d" (FF)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk00000035" (FF)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk00000188" (AND)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk00000189" (AND)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk0000019b" (ROM)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000001" (ONE) removed.
+Unused block "displayProcess/updater/divider2/blk00000002" (ZERO) removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk0000004e" (FF)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk0000004f" (FF)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk00000050" (FF)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk00000051" (FF)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk00000052" (FF)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk00000053" (FF)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk00000054" (FF)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk00000055" (FF)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk0000011c" (XOR)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk0000011d" (XOR)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk0000011e" (XOR)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk0000011f" (XOR)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk00000120" (XOR)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk00000121" (XOR)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk00000122" (XOR)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk0000012b" (XOR)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk00000188" (AND)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000001" (ONE) removed.
+Unused block "displayProcess/updater/divider3/blk00000002" (ZERO) removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk00000006" (FF)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk0000000d" (FF)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk00000015" (FF)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk0000001d" (FF)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk00000025" (FF)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk0000002d" (FF)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk00000035" (FF)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk00000188" (AND)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk00000189" (AND)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk0000019b" (ROM)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000001" (ONE) removed.
+Unused block "displayProcess/updater/divider4/blk00000002" (ZERO) removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk0000004e" (FF)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk0000004f" (FF)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk00000050" (FF)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk00000051" (FF)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk00000052" (FF)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk00000053" (FF)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk00000054" (FF)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk00000055" (FF)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk0000011c" (XOR)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk0000011d" (XOR)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk0000011e" (XOR)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk0000011f" (XOR)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk00000120" (XOR)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk00000121" (XOR)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk00000122" (XOR)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk0000012b" (XOR)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk00000188" (AND)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk000000a5" (MUX)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk000000b8" (MUX)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk000000cb" (MUX)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk000000de" (MUX)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk000000f1" (MUX)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk00000104" (MUX)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk00000117" (MUX)
+removed.
+Unused block "displayProcess/updater/divider1/blk00000003/blk0000012a" (MUX)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk000000a5" (MUX)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk000000b8" (MUX)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk000000cb" (MUX)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk000000de" (MUX)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk000000f1" (MUX)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk00000104" (MUX)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk00000117" (MUX)
+removed.
+Unused block "displayProcess/updater/divider2/blk00000003/blk0000012a" (MUX)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk000000a5" (MUX)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk000000b8" (MUX)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk000000cb" (MUX)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk000000de" (MUX)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk000000f1" (MUX)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk00000104" (MUX)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk00000117" (MUX)
+removed.
+Unused block "displayProcess/updater/divider3/blk00000003/blk0000012a" (MUX)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk000000a5" (MUX)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk000000b8" (MUX)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk000000cb" (MUX)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk000000de" (MUX)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk000000f1" (MUX)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk00000104" (MUX)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk00000117" (MUX)
+removed.
+Unused block "displayProcess/updater/divider4/blk00000003/blk0000012a" (MUX)
+removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		displayProcess/updater/divider1/blk00000003/blk00000004
+VCC 		displayProcess/updater/divider1/blk00000003/blk00000005
+FD 		displayProcess/updater/divider1/blk00000003/blk0000004e
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk0000004f
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000050
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000051
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000053
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000056
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000057
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000058
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000059
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk0000005b
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk0000005e
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk0000005f
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000060
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000061
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000063
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000066
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000067
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000068
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000069
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk0000006b
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk0000006e
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk0000006f
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000070
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000071
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000073
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000076
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000077
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000078
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000079
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk0000007b
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk0000007e
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk0000007f
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000080
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000081
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000083
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000086
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000087
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000088
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000089
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk0000008b
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk0000008e
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk0000008f
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000090
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000091
+   optimized to 0
+FD 		displayProcess/updater/divider1/blk00000003/blk00000093
+   optimized to 0
+INV 		displayProcess/updater/divider1/blk00000003/blk000001f3
+INV 		displayProcess/updater/divider1/blk00000003/blk000001f5
+INV 		displayProcess/updater/divider1/blk00000003/blk000001f6
+INV 		displayProcess/updater/divider1/blk00000003/blk000001f7
+INV 		displayProcess/updater/divider1/blk00000003/blk000001f8
+GND 		displayProcess/updater/divider2/blk00000003/blk00000004
+VCC 		displayProcess/updater/divider2/blk00000003/blk00000005
+FD 		displayProcess/updater/divider2/blk00000003/blk00000056
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000057
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000058
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000059
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk0000005b
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk0000005e
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk0000005f
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000060
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000061
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000063
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000066
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000067
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000068
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000069
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk0000006b
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk0000006e
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk0000006f
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000070
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000071
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000073
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000076
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000077
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000078
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000079
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk0000007b
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk0000007e
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk0000007f
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000080
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000081
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000083
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000086
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000087
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000088
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000089
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk0000008b
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk0000008e
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk0000008f
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000090
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000091
+   optimized to 0
+FD 		displayProcess/updater/divider2/blk00000003/blk00000093
+   optimized to 0
+INV 		displayProcess/updater/divider2/blk00000003/blk000001f3
+INV 		displayProcess/updater/divider2/blk00000003/blk000001f5
+INV 		displayProcess/updater/divider2/blk00000003/blk000001f6
+INV 		displayProcess/updater/divider2/blk00000003/blk000001f7
+INV 		displayProcess/updater/divider2/blk00000003/blk000001f8
+GND 		displayProcess/updater/divider3/blk00000003/blk00000004
+VCC 		displayProcess/updater/divider3/blk00000003/blk00000005
+FD 		displayProcess/updater/divider3/blk00000003/blk0000004e
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk0000004f
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000050
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000051
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000053
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000056
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000057
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000058
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000059
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk0000005b
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk0000005e
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk0000005f
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000060
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000061
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000063
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000066
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000067
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000068
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000069
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk0000006b
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk0000006e
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk0000006f
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000070
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000071
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000073
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000076
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000077
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000078
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000079
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk0000007b
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk0000007e
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk0000007f
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000080
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000081
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000083
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000086
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000087
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000088
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000089
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk0000008b
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk0000008e
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk0000008f
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000090
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000091
+   optimized to 0
+FD 		displayProcess/updater/divider3/blk00000003/blk00000093
+   optimized to 0
+INV 		displayProcess/updater/divider3/blk00000003/blk000001f3
+INV 		displayProcess/updater/divider3/blk00000003/blk000001f5
+INV 		displayProcess/updater/divider3/blk00000003/blk000001f6
+INV 		displayProcess/updater/divider3/blk00000003/blk000001f7
+INV 		displayProcess/updater/divider3/blk00000003/blk000001f8
+GND 		displayProcess/updater/divider4/blk00000003/blk00000004
+VCC 		displayProcess/updater/divider4/blk00000003/blk00000005
+FD 		displayProcess/updater/divider4/blk00000003/blk00000056
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000059
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk0000005a
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk0000005c
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk0000005e
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000061
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000062
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000064
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000066
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000069
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk0000006a
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk0000006c
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk0000006e
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000071
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000072
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000074
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000076
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000079
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk0000007a
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk0000007c
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk0000007e
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000081
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000082
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000084
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000086
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000089
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk0000008a
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk0000008c
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk0000008e
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000091
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000092
+   optimized to 0
+FD 		displayProcess/updater/divider4/blk00000003/blk00000094
+   optimized to 0
+INV 		displayProcess/updater/divider4/blk00000003/blk000001f2
+INV 		displayProcess/updater/divider4/blk00000003/blk000001f4
+INV 		displayProcess/updater/divider4/blk00000003/blk000001f5
+INV 		displayProcess/updater/divider4/blk00000003/blk000001f8
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| clock                              | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| digitSelector<0>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| digitSelector<1>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| digitSelector<2>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| dipLEDs<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| dipLEDs<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| dipLEDs<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| dipLEDs<3>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| dipLEDs<4>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| dipLEDs<5>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| dipLEDs<6>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| dipLEDs<7>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| dipSwitches<0>                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| dipSwitches<1>                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| dipSwitches<2>                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| dipSwitches<3>                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| dipSwitches<4>                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| dipSwitches<5>                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| dipSwitches<6>                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| dipSwitches<7>                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| equals                             | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| plus                               | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| sevenSegmentDisplay<0>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sevenSegmentDisplay<1>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sevenSegmentDisplay<2>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sevenSegmentDisplay<3>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sevenSegmentDisplay<4>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sevenSegmentDisplay<5>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sevenSegmentDisplay<6>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| sevenSegmentDisplay<7>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

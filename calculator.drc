@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Jun 08 01:46:28 2017
+
+drc -z Calculator.ncd Calculator.pcf
+
+DRC detected 0 errors and 0 warnings.

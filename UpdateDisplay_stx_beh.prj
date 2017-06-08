@@ -1,3 +1,0 @@
-vhdl isim_temp "ipcore_dir/divide.vhd"
-vhdl isim_temp "DisplayDriver.vhd"
-vhdl isim_temp "UpdateDisplay.vhd"

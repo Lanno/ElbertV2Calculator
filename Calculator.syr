@@ -1,0 +1,488 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: Calculator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Calculator.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Calculator"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-tq144
+
+---- Source Options
+Top Module Name                    : Calculator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3498 - No primary, secondary unit in the file "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ipcore_dir/divide.vhd. Ignore this file from project file "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/Calculator_vhdl.prj".
+Compiling vhdl file "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayDriver.vhd" in Library work.
+Architecture behavioral of Entity displaydriver is up to date.
+Compiling vhdl file "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" in Library work.
+Architecture behavioral of Entity updatedisplay is up to date.
+Compiling vhdl file "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayValue.vhd" in Library work.
+Architecture behavioral of Entity displayvalue is up to date.
+Compiling vhdl file "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/Calculator.vhd" in Library work.
+Entity <calculator> compiled.
+Entity <calculator> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Calculator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DisplayValue> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <UpdateDisplay> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <DisplayDriver> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Calculator> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <operator> in unit <Calculator> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <Calculator> analyzed. Unit <Calculator> generated.
+
+Analyzing Entity <DisplayValue> in library <work> (Architecture <Behavioral>).
+Entity <DisplayValue> analyzed. Unit <DisplayValue> generated.
+
+Analyzing Entity <UpdateDisplay> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:753 - "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" line 45: Unconnected output port 'rfd' of component 'divide'.
+WARNING:Xst:753 - "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" line 45: Unconnected output port 'quotient' of component 'divide'.
+WARNING:Xst:2211 - "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" line 45: Instantiating black box module <divide>.
+WARNING:Xst:753 - "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" line 55: Unconnected output port 'rfd' of component 'divide'.
+WARNING:Xst:753 - "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" line 55: Unconnected output port 'fractional' of component 'divide'.
+WARNING:Xst:2211 - "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" line 55: Instantiating black box module <divide>.
+WARNING:Xst:753 - "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" line 65: Unconnected output port 'rfd' of component 'divide'.
+WARNING:Xst:753 - "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" line 65: Unconnected output port 'quotient' of component 'divide'.
+WARNING:Xst:2211 - "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" line 65: Instantiating black box module <divide>.
+WARNING:Xst:753 - "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" line 75: Unconnected output port 'rfd' of component 'divide'.
+WARNING:Xst:753 - "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" line 75: Unconnected output port 'fractional' of component 'divide'.
+WARNING:Xst:2211 - "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" line 75: Instantiating black box module <divide>.
+Entity <UpdateDisplay> analyzed. Unit <UpdateDisplay> generated.
+
+Analyzing Entity <DisplayDriver> in library <work> (Architecture <Behavioral>).
+Entity <DisplayDriver> analyzed. Unit <DisplayDriver> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <DisplayDriver>.
+    Related source file is "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayDriver.vhd".
+    Found 16x8-bit ROM for signal <display$mux0001>.
+    Found 16x8-bit ROM for signal <display$mux0002>.
+    Found 16x8-bit ROM for signal <display$mux0003>.
+    Found 3-bit register for signal <selector>.
+    Found 8-bit register for signal <display>.
+    Found 32-bit up counter for signal <counter>.
+    Summary:
+	inferred   3 ROM(s).
+	inferred   1 Counter(s).
+	inferred  11 D-type flip-flop(s).
+Unit <DisplayDriver> synthesized.
+
+
+Synthesizing Unit <UpdateDisplay>.
+    Related source file is "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd".
+Unit <UpdateDisplay> synthesized.
+
+
+Synthesizing Unit <DisplayValue>.
+    Related source file is "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayValue.vhd".
+Unit <DisplayValue> synthesized.
+
+
+Synthesizing Unit <Calculator>.
+    Related source file is "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/Calculator.vhd".
+    Found 8-bit register for signal <memory>.
+    Found 8-bit register for signal <prevSwitches>.
+    Found 8-bit register for signal <result>.
+    Found 8-bit adder for signal <result$add0000> created at line 75.
+    Found 8-bit register for signal <value>.
+    Found 8-bit comparator not equal for signal <value$cmp_ne0000> created at line 46.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <Calculator> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 16x8-bit ROM                                          : 3
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 6
+ 3-bit register                                        : 1
+ 8-bit register                                        : 5
+# Comparators                                          : 1
+ 8-bit comparator not equal                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/divide.ngc>.
+Loading core <divide> for timing and area information for instance <divider1>.
+Loading core <divide> for timing and area information for instance <divider2>.
+Loading core <divide> for timing and area information for instance <divider3>.
+Loading core <divide> for timing and area information for instance <divider4>.
+
+Synthesizing (advanced) Unit <divider1>.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal fractional<3> may hinder XST clustering optimizations.
+Unit <divider1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <divider3>.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal fractional<3> may hinder XST clustering optimizations.
+Unit <divider3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <divider4>.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal quotient<3> may hinder XST clustering optimizations.
+Unit <divider4> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 16x8-bit ROM                                          : 3
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+# Comparators                                          : 1
+ 8-bit comparator not equal                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Calculator> ...
+
+Optimizing unit <DisplayDriver> ...
+WARNING:Xst:1710 - FF/Latch <display_7> (without init value) has a constant value of 1 in block <DisplayDriver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <display_7> (without init value) has a constant value of 1 in block <DisplayDriver>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <DisplayValue> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Calculator, actual ratio is 89.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 74
+ Flip-Flops                                            : 74
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Calculator.ngr
+Top Level Output File Name         : Calculator
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 30
+
+Cell Usage :
+# BELS                             : 1322
+#      GND                         : 5
+#      INV                         : 93
+#      LUT1                        : 35
+#      LUT2                        : 48
+#      LUT2_L                      : 3
+#      LUT3                        : 284
+#      LUT3_D                      : 3
+#      LUT3_L                      : 6
+#      LUT4                        : 51
+#      LUT4_D                      : 10
+#      LUT4_L                      : 10
+#      MULT_AND                    : 36
+#      MUXCY                       : 368
+#      MUXF5                       : 1
+#      VCC                         : 5
+#      XORCY                       : 364
+# FlipFlops/Latches                : 1010
+#      FD                          : 944
+#      FD_1                        : 16
+#      FDE                         : 8
+#      FDR                         : 32
+#      FDS                         : 10
+# Clock Buffers                    : 3
+#      BUFG                        : 1
+#      BUFGP                       : 2
+# IO Buffers                       : 28
+#      IBUF                        : 9
+#      OBUF                        : 19
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-5 
+
+ Number of Slices:                      614  out of    704    87%  
+ Number of Slice Flip Flops:           1010  out of   1408    71%  
+ Number of 4 input LUTs:                543  out of   1408    38%  
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of    108    27%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 994   |
+plus                               | BUFGP                  | 8     |
+equals                             | IBUF+BUFG              | 8     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.195ns (Maximum Frequency: 161.423MHz)
+   Minimum input arrival time before clock: 4.539ns
+   Maximum output required time after clock: 6.403ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 6.195ns (frequency: 161.423MHz)
+  Total number of paths / destination ports: 10838 / 1004
+-------------------------------------------------------------------------
+Delay:               6.195ns (Levels of Logic = 9)
+  Source:            displayProcess/updater/dispDriver/counter_22 (FF)
+  Destination:       displayProcess/updater/dispDriver/display_1 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: displayProcess/updater/dispDriver/counter_22 to displayProcess/updater/dispDriver/display_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.495   0.488  displayProcess/updater/dispDriver/counter_22 (displayProcess/updater/dispDriver/counter_22)
+     LUT4:I0->O            1   0.561   0.000  displayProcess/updater/dispDriver/counter_cmp_eq00001_wg_lut<0> (displayProcess/updater/dispDriver/counter_cmp_eq00001_wg_lut<0>)
+     MUXCY:S->O            1   0.523   0.000  displayProcess/updater/dispDriver/counter_cmp_eq00001_wg_cy<0> (displayProcess/updater/dispDriver/counter_cmp_eq00001_wg_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  displayProcess/updater/dispDriver/counter_cmp_eq00001_wg_cy<1> (displayProcess/updater/dispDriver/counter_cmp_eq00001_wg_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  displayProcess/updater/dispDriver/counter_cmp_eq00001_wg_cy<2> (displayProcess/updater/dispDriver/counter_cmp_eq00001_wg_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  displayProcess/updater/dispDriver/counter_cmp_eq00001_wg_cy<3> (displayProcess/updater/dispDriver/counter_cmp_eq00001_wg_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  displayProcess/updater/dispDriver/counter_cmp_eq00001_wg_cy<4> (displayProcess/updater/dispDriver/counter_cmp_eq00001_wg_cy<4>)
+     MUXCY:CI->O           9   0.179   0.699  displayProcess/updater/dispDriver/counter_cmp_eq00001_wg_cy<5> (displayProcess/updater/dispDriver/counter_cmp_eq00001_wg_cy<5>)
+     LUT4:I3->O           36   0.561   1.076  displayProcess/updater/dispDriver/counter_cmp_eq0000_1 (displayProcess/updater/dispDriver/counter_cmp_eq00001)
+     LUT4:I3->O            1   0.561   0.357  displayProcess/updater/dispDriver/display_mux0000<6>10 (displayProcess/updater/dispDriver/display_mux0000<6>10)
+     FDS:S                     0.435          displayProcess/updater/dispDriver/display_1
+    ----------------------------------------
+    Total                      6.195ns (3.575ns logic, 2.620ns route)
+                                       (57.7% logic, 42.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 152 / 24
+-------------------------------------------------------------------------
+Offset:              4.539ns (Levels of Logic = 4)
+  Source:            dipSwitches<4> (PAD)
+  Destination:       value_0 (FF)
+  Destination Clock: clock rising
+
+  Data Path: dipSwitches<4> to value_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.824   0.559  dipSwitches_4_IBUF (dipSwitches_4_IBUF)
+     LUT4:I0->O            1   0.561   0.465  value_cmp_ne000032 (value_cmp_ne000032)
+     LUT4_D:I0->LO         1   0.561   0.208  value_cmp_ne0000164 (N52)
+     LUT2:I0->O            8   0.561   0.643  value_and0000_inv1 (value_and0000_inv)
+     FDE:CE                    0.156          value_0
+    ----------------------------------------
+    Total                      4.539ns (2.663ns logic, 1.876ns route)
+                                       (58.7% logic, 41.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              6.403ns (Levels of Logic = 2)
+  Source:            value_7 (FF)
+  Destination:       dipLEDs<7> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: value_7 to dipLEDs<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.495   0.451  value_7 (value_7)
+     INV:I->O              4   0.562   0.499  displayProcess/valueTemp<7>1_INV_0 (dipLEDs_7_OBUF)
+     OBUF:I->O                 4.396          dipLEDs_7_OBUF (dipLEDs<7>)
+    ----------------------------------------
+    Total                      6.403ns (5.453ns logic, 0.950ns route)
+                                       (85.2% logic, 14.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.69 secs
+ 
+--> 
+
+Total memory usage is 261960 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

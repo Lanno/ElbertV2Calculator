@@ -1,6 +1,8 @@
-EN readdipswitches NULL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.vhd" sub00/vhpl04 1496893297
-EN updatedisplay NULL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" sub00/vhpl02 1496893295
-EN displaydriver NULL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayDriver.vhd" sub00/vhpl00 1496893293
-AR readdipswitches behavioral "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.vhd" sub00/vhpl05 1496893298
-AR updatedisplay behavioral "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" sub00/vhpl03 1496893296
-AR displaydriver behavioral "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayDriver.vhd" sub00/vhpl01 1496893294
+EN updatedisplay NULL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" sub00/vhpl02 1496911568
+EN displayvalue NULL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayValue.vhd" sub00/vhpl04 1496911570
+EN displaydriver NULL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayDriver.vhd" sub00/vhpl00 1496911566
+EN calculator NULL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/Calculator.vhd" sub00/vhpl06 1496911572
+AR updatedisplay behavioral "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" sub00/vhpl03 1496911569
+AR displayvalue behavioral "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayValue.vhd" sub00/vhpl05 1496911571
+AR calculator behavioral "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/Calculator.vhd" sub00/vhpl07 1496911573
+AR displaydriver behavioral "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayDriver.vhd" sub00/vhpl01 1496911567

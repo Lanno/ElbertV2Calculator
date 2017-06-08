@@ -1,4 +1,0 @@
-vhdl work "ipcore_dir/divide.vhd"
-vhdl work "DisplayDriver.vhd"
-vhdl work "UpdateDisplay.vhd"
-vhdl work "ReadDipSwitches.vhd"

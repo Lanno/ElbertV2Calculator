@@ -8,16 +8,16 @@
 <msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;PERIOD = 1MHz;&gt; [dips2leds.ucf(41)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
 </msg>
 
-<msg type="warning" file="NgdBuild" num="483" delta="old" >Attribute &quot;<arg fmt="%s" index="1">INIT</arg>&quot; on &quot;<arg fmt="%s" index="2">updater/divider4/blk00000003/sig00000071</arg>&quot; is on the wrong type of object.  Please see the Constraints Guide for more information on this attribute.
+<msg type="warning" file="NgdBuild" num="483" delta="old" >Attribute &quot;<arg fmt="%s" index="1">INIT</arg>&quot; on &quot;<arg fmt="%s" index="2">displayProcess/updater/divider1/blk00000003/sig00000071</arg>&quot; is on the wrong type of object.  Please see the Constraints Guide for more information on this attribute.
 </msg>
 
-<msg type="warning" file="NgdBuild" num="483" delta="old" >Attribute &quot;<arg fmt="%s" index="1">INIT</arg>&quot; on &quot;<arg fmt="%s" index="2">updater/divider3/blk00000003/sig00000071</arg>&quot; is on the wrong type of object.  Please see the Constraints Guide for more information on this attribute.
+<msg type="warning" file="NgdBuild" num="483" delta="old" >Attribute &quot;<arg fmt="%s" index="1">INIT</arg>&quot; on &quot;<arg fmt="%s" index="2">displayProcess/updater/divider2/blk00000003/sig00000071</arg>&quot; is on the wrong type of object.  Please see the Constraints Guide for more information on this attribute.
 </msg>
 
-<msg type="warning" file="NgdBuild" num="483" delta="old" >Attribute &quot;<arg fmt="%s" index="1">INIT</arg>&quot; on &quot;<arg fmt="%s" index="2">updater/divider2/blk00000003/sig00000071</arg>&quot; is on the wrong type of object.  Please see the Constraints Guide for more information on this attribute.
+<msg type="warning" file="NgdBuild" num="483" delta="old" >Attribute &quot;<arg fmt="%s" index="1">INIT</arg>&quot; on &quot;<arg fmt="%s" index="2">displayProcess/updater/divider3/blk00000003/sig00000071</arg>&quot; is on the wrong type of object.  Please see the Constraints Guide for more information on this attribute.
 </msg>
 
-<msg type="warning" file="NgdBuild" num="483" delta="old" >Attribute &quot;<arg fmt="%s" index="1">INIT</arg>&quot; on &quot;<arg fmt="%s" index="2">updater/divider1/blk00000003/sig00000071</arg>&quot; is on the wrong type of object.  Please see the Constraints Guide for more information on this attribute.
+<msg type="warning" file="NgdBuild" num="483" delta="old" >Attribute &quot;<arg fmt="%s" index="1">INIT</arg>&quot; on &quot;<arg fmt="%s" index="2">displayProcess/updater/divider4/blk00000003/sig00000071</arg>&quot; is on the wrong type of object.  Please see the Constraints Guide for more information on this attribute.
 </msg>
 
 </messages>
