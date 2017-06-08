@@ -1,0 +1,41 @@
+NET "dipSwitches(0)" LOC = P58;
+NET "dipSwitches(1)" LOC = P59;
+NET "dipSwitches(2)" LOC = P60;
+NET "dipSwitches(3)" LOC = P63;
+NET "dipSwitches(4)" LOC = P64;
+NET "dipSwitches(5)" LOC = P68;
+NET "dipSwitches(6)" LOC = P69;
+NET "dipSwitches(7)" LOC = P70;
+
+NET "dipSwitches(7)" PULLUP;
+NET "dipSwitches(6)" PULLUP;
+NET "dipSwitches(5)" PULLUP;
+NET "dipSwitches(4)" PULLUP;
+NET "dipSwitches(3)" PULLUP;
+NET "dipSwitches(2)" PULLUP;
+NET "dipSwitches(1)" PULLUP;
+NET "dipSwitches(0)" PULLUP;
+
+NET "dipLEDs(7)" LOC = P46;
+NET "dipLEDs(6)" LOC = P47;
+NET "dipLEDs(5)" LOC = P48;
+NET "dipLEDs(4)" LOC = P49;
+NET "dipLEDs(3)" LOC = P50;
+NET "dipLEDs(2)" LOC = P51;
+NET "dipLEDs(1)" LOC = P54;
+NET "dipLEDs(0)" LOC = P55;
+
+NET "sevenSegmentDisplay(7)" LOC = P114;
+NET "sevenSegmentDisplay(6)" LOC = P110;
+NET "sevenSegmentDisplay(5)" LOC = P111;
+NET "sevenSegmentDisplay(4)" LOC = P112;
+NET "sevenSegmentDisplay(3)" LOC = P113;
+NET "sevenSegmentDisplay(2)" LOC = P115;
+NET "sevenSegmentDisplay(1)" LOC = P116;
+NET "sevenSegmentDisplay(0)" LOC = P117;
+
+NET "digitSelector(2)" LOC = P120;
+NET "digitSelector(1)" LOC = P121;
+NET "digitSelector(0)" LOC = P124;
+
+NET "clock" LOC = P129  | IOSTANDARD = LVCMOS33 | PERIOD = 1MHz;

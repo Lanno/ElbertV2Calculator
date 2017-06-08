@@ -1,0 +1,523 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o
+ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf
+
+Design file:              ReadDipSwitches.ncd
+Physical constraint file: ReadDipSwitches.pcf
+Device,package,speed:     xc3s50a,tq144,-5 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "clock_BUFGP/IBUFG" PERIOD = 1000 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 7762 paths analyzed, 1595 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   7.034ns.
+--------------------------------------------------------------------------------
+
+Paths for end point updater/dispDriver/display_6 (SLICE_X16Y21.SR), 84 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     992.966ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               updater/dispDriver/counter_16 (FF)
+  Destination:          updater/dispDriver/display_6 (FF)
+  Requirement:          1000.000ns
+  Data Path Delay:      6.887ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.147ns (0.233 - 0.380)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 1000.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: updater/dispDriver/counter_16 to updater/dispDriver/display_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y24.XQ      Tcko                  0.495   updater/dispDriver/counter<16>
+                                                       updater/dispDriver/counter_16
+    SLICE_X21Y27.G2      net (fanout=2)        1.098   updater/dispDriver/counter<16>
+    SLICE_X21Y27.COUT    Topcyg                1.009   updater/dispDriver/counter_cmp_eq00001_wg_cy<3>
+                                                       updater/dispDriver/counter_cmp_eq00001_wg_lut<3>
+                                                       updater/dispDriver/counter_cmp_eq00001_wg_cy<3>
+    SLICE_X21Y28.CIN     net (fanout=1)        0.000   updater/dispDriver/counter_cmp_eq00001_wg_cy<3>
+    SLICE_X21Y28.COUT    Tbyp                  0.130   updater/dispDriver/counter_cmp_eq00001_wg_cy<5>
+                                                       updater/dispDriver/counter_cmp_eq00001_wg_cy<4>
+                                                       updater/dispDriver/counter_cmp_eq00001_wg_cy<5>
+    SLICE_X19Y22.G1      net (fanout=10)       0.967   updater/dispDriver/counter_cmp_eq00001_wg_cy<5>
+    SLICE_X19Y22.Y       Tilo                  0.561   updater/dispDriver/display_mux0000<3>21
+                                                       updater/dispDriver/counter_cmp_eq0000_1
+    SLICE_X19Y20.F2      net (fanout=18)       0.630   updater/dispDriver/counter_cmp_eq00001
+    SLICE_X19Y20.X       Tilo                  0.562   updater/dispDriver/display_mux0000<1>38
+                                                       updater/dispDriver/display_mux0000<1>38
+    SLICE_X16Y21.SR      net (fanout=1)        1.002   updater/dispDriver/display_mux0000<1>38
+    SLICE_X16Y21.CLK     Tsrck                 0.433   updater/dispDriver/display<6>
+                                                       updater/dispDriver/display_6
+    -------------------------------------------------  ---------------------------
+    Total                                      6.887ns (3.190ns logic, 3.697ns route)
+                                                       (46.3% logic, 53.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     992.998ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               updater/dispDriver/counter_12 (FF)
+  Destination:          updater/dispDriver/display_6 (FF)
+  Requirement:          1000.000ns
+  Data Path Delay:      6.871ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.131ns (0.233 - 0.364)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 1000.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: updater/dispDriver/counter_12 to updater/dispDriver/display_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y22.XQ      Tcko                  0.495   updater/dispDriver/counter<12>
+                                                       updater/dispDriver/counter_12
+    SLICE_X21Y27.G1      net (fanout=2)        1.082   updater/dispDriver/counter<12>
+    SLICE_X21Y27.COUT    Topcyg                1.009   updater/dispDriver/counter_cmp_eq00001_wg_cy<3>
+                                                       updater/dispDriver/counter_cmp_eq00001_wg_lut<3>
+                                                       updater/dispDriver/counter_cmp_eq00001_wg_cy<3>
+    SLICE_X21Y28.CIN     net (fanout=1)        0.000   updater/dispDriver/counter_cmp_eq00001_wg_cy<3>
+    SLICE_X21Y28.COUT    Tbyp                  0.130   updater/dispDriver/counter_cmp_eq00001_wg_cy<5>
+                                                       updater/dispDriver/counter_cmp_eq00001_wg_cy<4>
+                                                       updater/dispDriver/counter_cmp_eq00001_wg_cy<5>
+    SLICE_X19Y22.G1      net (fanout=10)       0.967   updater/dispDriver/counter_cmp_eq00001_wg_cy<5>
+    SLICE_X19Y22.Y       Tilo                  0.561   updater/dispDriver/display_mux0000<3>21
+                                                       updater/dispDriver/counter_cmp_eq0000_1
+    SLICE_X19Y20.F2      net (fanout=18)       0.630   updater/dispDriver/counter_cmp_eq00001
+    SLICE_X19Y20.X       Tilo                  0.562   updater/dispDriver/display_mux0000<1>38
+                                                       updater/dispDriver/display_mux0000<1>38
+    SLICE_X16Y21.SR      net (fanout=1)        1.002   updater/dispDriver/display_mux0000<1>38
+    SLICE_X16Y21.CLK     Tsrck                 0.433   updater/dispDriver/display<6>
+                                                       updater/dispDriver/display_6
+    -------------------------------------------------  ---------------------------
+    Total                                      6.871ns (3.190ns logic, 3.681ns route)
+                                                       (46.4% logic, 53.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     993.157ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               updater/dispDriver/counter_9 (FF)
+  Destination:          updater/dispDriver/display_6 (FF)
+  Requirement:          1000.000ns
+  Data Path Delay:      6.734ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.109ns (0.233 - 0.342)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 1000.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: updater/dispDriver/counter_9 to updater/dispDriver/display_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y20.YQ      Tcko                  0.524   updater/dispDriver/counter<8>
+                                                       updater/dispDriver/counter_9
+    SLICE_X21Y28.F3      net (fanout=2)        1.029   updater/dispDriver/counter<9>
+    SLICE_X21Y28.COUT    Topcyf                1.026   updater/dispDriver/counter_cmp_eq00001_wg_cy<5>
+                                                       updater/dispDriver/counter_cmp_eq00001_wg_lut<4>
+                                                       updater/dispDriver/counter_cmp_eq00001_wg_cy<4>
+                                                       updater/dispDriver/counter_cmp_eq00001_wg_cy<5>
+    SLICE_X19Y22.G1      net (fanout=10)       0.967   updater/dispDriver/counter_cmp_eq00001_wg_cy<5>
+    SLICE_X19Y22.Y       Tilo                  0.561   updater/dispDriver/display_mux0000<3>21
+                                                       updater/dispDriver/counter_cmp_eq0000_1
+    SLICE_X19Y20.F2      net (fanout=18)       0.630   updater/dispDriver/counter_cmp_eq00001
+    SLICE_X19Y20.X       Tilo                  0.562   updater/dispDriver/display_mux0000<1>38
+                                                       updater/dispDriver/display_mux0000<1>38
+    SLICE_X16Y21.SR      net (fanout=1)        1.002   updater/dispDriver/display_mux0000<1>38
+    SLICE_X16Y21.CLK     Tsrck                 0.433   updater/dispDriver/display<6>
+                                                       updater/dispDriver/display_6
+    -------------------------------------------------  ---------------------------
+    Total                                      6.734ns (3.106ns logic, 3.628ns route)
+                                                       (46.1% logic, 53.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point updater/dispDriver/display_1 (SLICE_X19Y24.F2), 50 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     993.289ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               updater/dispDriver/counter_4 (FF)
+  Destination:          updater/dispDriver/display_1 (FF)
+  Requirement:          1000.000ns
+  Data Path Delay:      6.658ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.053ns (0.258 - 0.311)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 1000.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: updater/dispDriver/counter_4 to updater/dispDriver/display_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y18.XQ      Tcko                  0.495   updater/dispDriver/counter<4>
+                                                       updater/dispDriver/counter_4
+    SLICE_X19Y23.G4      net (fanout=7)        1.632   updater/dispDriver/counter<4>
+    SLICE_X19Y23.Y       Tilo                  0.561   N2
+                                                       updater/dispDriver/counter_cmp_eq0000_SW0
+    SLICE_X17Y24.F2      net (fanout=4)        0.881   N01
+    SLICE_X17Y24.X       Tilo                  0.562   N21
+                                                       updater/dispDriver/counter_cmp_eq0000_SW2
+    SLICE_X19Y24.G1      net (fanout=3)        0.788   N21
+    SLICE_X19Y24.Y       Tilo                  0.561   updater/dispDriver/display<1>
+                                                       updater/dispDriver/display_mux0000<6>10
+    SLICE_X19Y24.F2      net (fanout=1)        0.576   updater/dispDriver/display_mux0000<6>10/O
+    SLICE_X19Y24.CLK     Tfck                  0.602   updater/dispDriver/display<1>
+                                                       updater/dispDriver/display_mux0000<6>1041
+                                                       updater/dispDriver/display_1
+    -------------------------------------------------  ---------------------------
+    Total                                      6.658ns (2.781ns logic, 3.877ns route)
+                                                       (41.8% logic, 58.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     993.540ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               updater/dispDriver/counter_4 (FF)
+  Destination:          updater/dispDriver/display_1 (FF)
+  Requirement:          1000.000ns
+  Data Path Delay:      6.407ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.053ns (0.258 - 0.311)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 1000.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: updater/dispDriver/counter_4 to updater/dispDriver/display_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y18.XQ      Tcko                  0.495   updater/dispDriver/counter<4>
+                                                       updater/dispDriver/counter_4
+    SLICE_X19Y23.G4      net (fanout=7)        1.632   updater/dispDriver/counter<4>
+    SLICE_X19Y23.Y       Tilo                  0.561   N2
+                                                       updater/dispDriver/counter_cmp_eq0000_SW0
+    SLICE_X18Y18.BX      net (fanout=4)        0.803   N01
+    SLICE_X18Y18.X       Tbxx                  0.705   N20
+                                                       updater/dispDriver/counter_cmp_eq0000_SW1
+    SLICE_X19Y24.G4      net (fanout=1)        0.472   N20
+    SLICE_X19Y24.Y       Tilo                  0.561   updater/dispDriver/display<1>
+                                                       updater/dispDriver/display_mux0000<6>10
+    SLICE_X19Y24.F2      net (fanout=1)        0.576   updater/dispDriver/display_mux0000<6>10/O
+    SLICE_X19Y24.CLK     Tfck                  0.602   updater/dispDriver/display<1>
+                                                       updater/dispDriver/display_mux0000<6>1041
+                                                       updater/dispDriver/display_1
+    -------------------------------------------------  ---------------------------
+    Total                                      6.407ns (2.924ns logic, 3.483ns route)
+                                                       (45.6% logic, 54.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     993.667ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               updater/dispDriver/counter_6 (FF)
+  Destination:          updater/dispDriver/display_1 (FF)
+  Requirement:          1000.000ns
+  Data Path Delay:      6.280ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.053ns (0.258 - 0.311)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 1000.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: updater/dispDriver/counter_6 to updater/dispDriver/display_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y19.XQ      Tcko                  0.495   updater/dispDriver/counter<6>
+                                                       updater/dispDriver/counter_6
+    SLICE_X19Y23.G2      net (fanout=11)       1.254   updater/dispDriver/counter<6>
+    SLICE_X19Y23.Y       Tilo                  0.561   N2
+                                                       updater/dispDriver/counter_cmp_eq0000_SW0
+    SLICE_X17Y24.F2      net (fanout=4)        0.881   N01
+    SLICE_X17Y24.X       Tilo                  0.562   N21
+                                                       updater/dispDriver/counter_cmp_eq0000_SW2
+    SLICE_X19Y24.G1      net (fanout=3)        0.788   N21
+    SLICE_X19Y24.Y       Tilo                  0.561   updater/dispDriver/display<1>
+                                                       updater/dispDriver/display_mux0000<6>10
+    SLICE_X19Y24.F2      net (fanout=1)        0.576   updater/dispDriver/display_mux0000<6>10/O
+    SLICE_X19Y24.CLK     Tfck                  0.602   updater/dispDriver/display<1>
+                                                       updater/dispDriver/display_mux0000<6>1041
+                                                       updater/dispDriver/display_1
+    -------------------------------------------------  ---------------------------
+    Total                                      6.280ns (2.781ns logic, 3.499ns route)
+                                                       (44.3% logic, 55.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point updater/dispDriver/display_3 (SLICE_X17Y22.F2), 32 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     993.290ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               updater/dispDriver/counter_2 (FF)
+  Destination:          updater/dispDriver/display_3 (FF)
+  Requirement:          1000.000ns
+  Data Path Delay:      6.660ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.050ns (0.239 - 0.289)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 1000.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: updater/dispDriver/counter_2 to updater/dispDriver/display_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y17.XQ      Tcko                  0.495   updater/dispDriver/counter<2>
+                                                       updater/dispDriver/counter_2
+    SLICE_X17Y24.G4      net (fanout=13)       1.408   updater/dispDriver/counter<2>
+    SLICE_X17Y24.Y       Tilo                  0.561   N21
+                                                       updater/dispDriver/display_mux0000<6>121
+    SLICE_X14Y17.F3      net (fanout=9)        1.137   updater/dispDriver/display_mux0000<2>150
+    SLICE_X14Y17.X       Tilo                  0.601   updater/dispDriver/display_mux0000<4>1211
+                                                       updater/dispDriver/display_mux0000<4>1211
+    SLICE_X14Y20.F1      net (fanout=1)        0.565   updater/dispDriver/display_mux0000<4>1211
+    SLICE_X14Y20.X       Tilo                  0.601   updater/dispDriver/N16
+                                                       updater/dispDriver/display_mux0000<4>1221
+    SLICE_X17Y22.F2      net (fanout=2)        0.690   updater/dispDriver/N16
+    SLICE_X17Y22.CLK     Tfck                  0.602   updater/dispDriver/display<3>
+                                                       updater/dispDriver/display_mux0000<4>1431
+                                                       updater/dispDriver/display_3
+    -------------------------------------------------  ---------------------------
+    Total                                      6.660ns (2.860ns logic, 3.800ns route)
+                                                       (42.9% logic, 57.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     993.522ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               updater/dispDriver/counter_7 (FF)
+  Destination:          updater/dispDriver/display_3 (FF)
+  Requirement:          1000.000ns
+  Data Path Delay:      6.406ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.072ns (0.239 - 0.311)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 1000.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: updater/dispDriver/counter_7 to updater/dispDriver/display_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y19.YQ      Tcko                  0.524   updater/dispDriver/counter<6>
+                                                       updater/dispDriver/counter_7
+    SLICE_X17Y24.G3      net (fanout=12)       1.125   updater/dispDriver/counter<7>
+    SLICE_X17Y24.Y       Tilo                  0.561   N21
+                                                       updater/dispDriver/display_mux0000<6>121
+    SLICE_X14Y17.F3      net (fanout=9)        1.137   updater/dispDriver/display_mux0000<2>150
+    SLICE_X14Y17.X       Tilo                  0.601   updater/dispDriver/display_mux0000<4>1211
+                                                       updater/dispDriver/display_mux0000<4>1211
+    SLICE_X14Y20.F1      net (fanout=1)        0.565   updater/dispDriver/display_mux0000<4>1211
+    SLICE_X14Y20.X       Tilo                  0.601   updater/dispDriver/N16
+                                                       updater/dispDriver/display_mux0000<4>1221
+    SLICE_X17Y22.F2      net (fanout=2)        0.690   updater/dispDriver/N16
+    SLICE_X17Y22.CLK     Tfck                  0.602   updater/dispDriver/display<3>
+                                                       updater/dispDriver/display_mux0000<4>1431
+                                                       updater/dispDriver/display_3
+    -------------------------------------------------  ---------------------------
+    Total                                      6.406ns (2.889ns logic, 3.517ns route)
+                                                       (45.1% logic, 54.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     993.754ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               updater/dispDriver/counter_5 (FF)
+  Destination:          updater/dispDriver/display_3 (FF)
+  Requirement:          1000.000ns
+  Data Path Delay:      6.174ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.072ns (0.239 - 0.311)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 1000.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: updater/dispDriver/counter_5 to updater/dispDriver/display_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X23Y18.YQ      Tcko                  0.524   updater/dispDriver/counter<4>
+                                                       updater/dispDriver/counter_5
+    SLICE_X17Y24.G2      net (fanout=13)       0.893   updater/dispDriver/counter<5>
+    SLICE_X17Y24.Y       Tilo                  0.561   N21
+                                                       updater/dispDriver/display_mux0000<6>121
+    SLICE_X14Y17.F3      net (fanout=9)        1.137   updater/dispDriver/display_mux0000<2>150
+    SLICE_X14Y17.X       Tilo                  0.601   updater/dispDriver/display_mux0000<4>1211
+                                                       updater/dispDriver/display_mux0000<4>1211
+    SLICE_X14Y20.F1      net (fanout=1)        0.565   updater/dispDriver/display_mux0000<4>1211
+    SLICE_X14Y20.X       Tilo                  0.601   updater/dispDriver/N16
+                                                       updater/dispDriver/display_mux0000<4>1221
+    SLICE_X17Y22.F2      net (fanout=2)        0.690   updater/dispDriver/N16
+    SLICE_X17Y22.CLK     Tfck                  0.602   updater/dispDriver/display<3>
+                                                       updater/dispDriver/display_mux0000<4>1431
+                                                       updater/dispDriver/display_3
+    -------------------------------------------------  ---------------------------
+    Total                                      6.174ns (2.889ns logic, 3.285ns route)
+                                                       (46.8% logic, 53.2% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "clock_BUFGP/IBUFG" PERIOD = 1000 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point updater/divider1/blk00000003/blk0000003d (SLICE_X13Y7.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.652ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               updater/divider1/blk00000003/blk00000013 (FF)
+  Destination:          updater/divider1/blk00000003/blk0000003d (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.760ns (Levels of Logic = 0)
+  Clock Path Skew:      0.108ns (0.367 - 0.259)
+  Source Clock:         clock_BUFGP rising at 1000.000ns
+  Destination Clock:    clock_BUFGP rising at 1000.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: updater/divider1/blk00000003/blk00000013 to updater/divider1/blk00000003/blk0000003d
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y6.XQ       Tcko                  0.396   updater/divider1/blk00000003/sig00000039
+                                                       updater/divider1/blk00000003/blk00000013
+    SLICE_X13Y7.BX       net (fanout=1)        0.302   updater/divider1/blk00000003/sig00000039
+    SLICE_X13Y7.CLK      Tckdi       (-Th)    -0.062   updater/divider1/blk00000003/sig00000069
+                                                       updater/divider1/blk00000003/blk0000003d
+    -------------------------------------------------  ---------------------------
+    Total                                      0.760ns (0.458ns logic, 0.302ns route)
+                                                       (60.3% logic, 39.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point updater/divider3/blk00000003/blk00000049 (SLICE_X3Y19.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.716ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               updater/divider2/blk00000003/blk00000041 (FF)
+  Destination:          updater/divider3/blk00000003/blk00000049 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.783ns (Levels of Logic = 0)
+  Clock Path Skew:      0.067ns (0.319 - 0.252)
+  Source Clock:         clock_BUFGP rising at 1000.000ns
+  Destination Clock:    clock_BUFGP rising at 1000.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: updater/divider2/blk00000003/blk00000041 to updater/divider3/blk00000003/blk00000049
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y18.YQ       Tcko                  0.419   updater/tensDigitTemp<5>
+                                                       updater/divider2/blk00000003/blk00000041
+    SLICE_X3Y19.BX       net (fanout=1)        0.302   updater/tensDigitTemp<4>
+    SLICE_X3Y19.CLK      Tckdi       (-Th)    -0.062   updater/divider3/blk00000003/sig00000065
+                                                       updater/divider3/blk00000003/blk00000049
+    -------------------------------------------------  ---------------------------
+    Total                                      0.783ns (0.481ns logic, 0.302ns route)
+                                                       (61.4% logic, 38.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point updater/divider4/blk00000003/blk00000036 (SLICE_X20Y7.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.729ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               updater/divider4/blk00000003/blk0000004d (FF)
+  Destination:          updater/divider4/blk00000003/blk00000036 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.826ns (Levels of Logic = 0)
+  Clock Path Skew:      0.097ns (0.426 - 0.329)
+  Source Clock:         clock_BUFGP rising at 1000.000ns
+  Destination Clock:    clock_BUFGP rising at 1000.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: updater/divider4/blk00000003/blk0000004d to updater/divider4/blk00000003/blk00000036
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y4.YQ       Tcko                  0.419   updater/divider4/blk00000003/sig00000060
+                                                       updater/divider4/blk00000003/blk0000004d
+    SLICE_X20Y7.BX       net (fanout=1)        0.305   updater/divider4/blk00000003/sig00000061
+    SLICE_X20Y7.CLK      Tckdi       (-Th)    -0.102   updater/divider4/blk00000003/sig00000059
+                                                       updater/divider4/blk00000003/blk00000036
+    -------------------------------------------------  ---------------------------
+    Total                                      0.826ns (0.521ns logic, 0.305ns route)
+                                                       (63.1% logic, 36.9% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "clock_BUFGP/IBUFG" PERIOD = 1000 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 998.672ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 1000.000ns
+  Low pulse: 500.000ns
+  Low pulse limit: 0.664ns (Tcl)
+  Physical resource: updater/divider2/blk00000003/sig00000060/CLK
+  Logical resource: updater/divider2/blk00000003/blk0000016d/CK
+  Location pin: SLICE_X6Y2.CLK
+  Clock network: clock_BUFGP
+--------------------------------------------------------------------------------
+Slack: 998.672ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 1000.000ns
+  High pulse: 500.000ns
+  High pulse limit: 0.664ns (Tch)
+  Physical resource: updater/divider2/blk00000003/sig00000060/CLK
+  Logical resource: updater/divider2/blk00000003/blk0000016d/CK
+  Location pin: SLICE_X6Y2.CLK
+  Clock network: clock_BUFGP
+--------------------------------------------------------------------------------
+Slack: 998.672ns (period - min period limit)
+  Period: 1000.000ns
+  Min period limit: 1.328ns (753.012MHz) (Tcp)
+  Physical resource: updater/divider2/blk00000003/sig00000060/CLK
+  Logical resource: updater/divider2/blk00000003/blk0000016d/CK
+  Location pin: SLICE_X6Y2.CLK
+  Clock network: clock_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    7.034|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 7762 paths, 0 nets, and 1936 connections
+
+Design statistics:
+   Minimum period:   7.034ns{1}   (Maximum frequency: 142.167MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Jun 07 20:45:53 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 146 MB
+
+
+

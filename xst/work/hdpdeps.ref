@@ -1,0 +1,22 @@
+V3 10
+FL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayDriver.vhd" 2017/06/07.20:41:28 P.20131013
+EN work/DisplayDriver 1496893293 \
+      FL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayDriver.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/DisplayDriver/Behavioral 1496893294 \
+      FL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayDriver.vhd" \
+      EN work/DisplayDriver 1496893293
+FL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.vhd" 2017/06/07.20:23:51 P.20131013
+EN work/ReadDipSwitches 1496893297 \
+      FL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/ReadDipSwitches/Behavioral 1496893298 \
+      FL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.vhd" \
+      EN work/ReadDipSwitches 1496893297 AR work/UpdateDisplay/Behavioral 1496893296
+FL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" 2017/06/07.19:37:36 P.20131013
+EN work/UpdateDisplay 1496893295 \
+      FL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/UpdateDisplay/Behavioral 1496893296 \
+      FL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" \
+      EN work/UpdateDisplay 1496893295 CP divide AR work/DisplayDriver/Behavioral 1496893294

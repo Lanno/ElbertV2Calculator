@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\noluc\Documents\Xilinx ISE Projects\BinaryCalculator\ReadDipSwitches.ncd
+OUTFILE=C:\Users\noluc\Documents\Xilinx ISE Projects\BinaryCalculator\ReadDipSwitches.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5tq144
+WORKINGDIR=C:\Users\noluc\Documents\Xilinx ISE Projects\BinaryCalculator
+LICENSE=WebPack
+USER_INFO=211333447_0_0_015

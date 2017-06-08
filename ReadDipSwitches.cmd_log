@@ -1,0 +1,123 @@
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+xst -intstyle ise -ifn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.xst" -ofn "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/ReadDipSwitches.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc dips2leds.ucf -p xc3s50a-tq144-5 "ReadDipSwitches.ngc" ReadDipSwitches.ngd  
+map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off -c 100 -o ReadDipSwitches_map.ncd ReadDipSwitches.ngd ReadDipSwitches.pcf 
+par -w -intstyle ise -ol high -t 1 ReadDipSwitches_map.ncd ReadDipSwitches.ncd ReadDipSwitches.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ReadDipSwitches.twx ReadDipSwitches.ncd -o ReadDipSwitches.twr ReadDipSwitches.pcf -ucf dips2leds.ucf 
+bitgen -intstyle ise -f ReadDipSwitches.ut ReadDipSwitches.ncd 

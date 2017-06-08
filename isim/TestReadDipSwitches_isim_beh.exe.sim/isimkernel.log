@@ -1,0 +1,29 @@
+Command line:
+   TestReadDipSwitches_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64352
+
+Wed Jun 07 20:00:46 2017
+
+
+ Elaboration Time: 0.171875 sec
+
+ Current Memory Usage: 1527.98 Meg
+
+ Total Signals          : 9474
+ Total Nets             : 3166
+ Total Signal Drivers   : 3086
+ Total Blocks           : 2027
+ Total Primitive Blocks : 2020
+ Total Processes        : 3084
+ Total Traceable Variables  : 1610
+ Total Scalar Nets and Variables : 13060
+Total Line Count : 5792
+
+ Total Simulation Time: 2.89063 sec
+
+ Current Memory Usage: 1213.37 Meg
+
+Wed Jun 07 20:06:55 2017
+
