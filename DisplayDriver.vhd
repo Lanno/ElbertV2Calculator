@@ -24,9 +24,9 @@ use IEEE.NUMERIC_STD.ALL;
 entity DisplayDriver is
 	port(
 		clock : in std_logic;
-		onesDigit, tensDigit, hundredsDigit : in std_logic_vector(7 downto 0);
-		display : out std_logic_vector(7 downto 0);
-		selector : out std_logic_vector(2 downto 0)
+		onesDigit, tensDigit, hundredsDigit : in unsigned(7 downto 0);
+		display : out unsigned(7 downto 0);
+		selector : out unsigned(2 downto 0)
 	);
 end DisplayDriver;
 
@@ -35,8 +35,8 @@ architecture Behavioral of DisplayDriver is
 begin 
 	process (clock) is 
 		procedure displayMapping (
-			signal digit : in std_logic_vector(7 downto 0); 
-			signal display : out std_logic_vector(7 downto 0)) is
+			signal digit : in unsigned(7 downto 0); 
+			signal display : out unsigned(7 downto 0)) is
 			
 			variable tempDigit : integer;
 		begin

@@ -23,22 +23,23 @@ use ieee.numeric_std.all;
 
 entity Calculator is
 	port (
-		dipSwitches : in std_logic_vector(7 downto 0);
-		plus, equals, clock : in std_logic;
-		dipLEDs, sevenSegmentDisplay : out std_logic_vector(7 downto 0);
-		digitSelector : out std_logic_vector(2 downto 0)
+		dipSwitches : in unsigned(7 downto 0);
+		plus, subtract, multiply, divide, equals, clock : in std_logic;
+		dipLEDs, sevenSegmentDisplay : out unsigned(7 downto 0);
+		digitSelector : out unsigned(2 downto 0)
 	);
 	
 end Calculator;
 
 architecture Behavioral of Calculator is
-	signal memory, value, result, prevSwitches : std_logic_vector(7 downto 0);
+	signal memory, value, prevSwitches : unsigned(7 downto 0);
 
-	signal operator : integer := 0; -- 0 -> "plus", 1 -> "subtract"
+	signal operator : integer := 0;
 
 begin
-	-- Switch the displayed value
-	process (clock, equals, dipSwitches)	
+	process (clock, plus, subtract, multiply, divide, equals, dipSwitches)
+	 variable button_held : std_logic := '0';	
+	
 	begin
 		if rising_edge(clock) then
 			prevSwitches <= dipSwitches;
@@ -46,38 +47,57 @@ begin
 			if prevSwitches /= dipSwitches then
 				value <= dipSwitches;
 				
-			elsif equals = '0' then
-				value <= result;
+			end if;
+			
+			if plus = '0' and button_held = '0' then
+				memory <= value;
+				
+				operator <= 0;
+				
+			elsif subtract = '0' and button_held = '0' then
+				memory <= value;
+				
+				operator <= 1;
+				
+				button_held := '1';
+				
+			elsif multiply = '0' and button_held = '0' then
+				memory <= value;
+				
+				operator <= 2;
+				
+				button_held := '1';
+				
+			elsif divide = '0' and button_held = '0' then
+				memory <= value;
+				
+				operator <= 3;
+				
+				button_held := '1';
+				
+			elsif equals = '0' and button_held = '0' then
+				case operator is
+					when 0 =>
+						-- Plus operation.
+						
+						value <= memory + value + "00000001";
+						
+					when 1 =>
+						-- Subtract operation.
+						
+						value <= memory - value - "00000001";
+						
+					when others =>
+						value <= (others => '0');
+
+				end case;	
+				
+				button_held := '1';
+				
+			elsif plus = '1' and subtract = '1' and multiply = '1' and divide = '1' and equals = '1' then
+				button_held := '0';
 				
 			end if;
-		end if;
-	end process;
-
-	-- Operator Selection Process
-	process (plus)
-	begin
-		if falling_edge(plus) then
-			memory <= value;
-
-			operator <= 0;
-			
-		end if;
-	end process;
-	
-	-- Calculation Process
-	process (equals, dipSwitches)
-	begin
-		if falling_edge(equals) then
-			case operator is
-				when 0 =>
-					-- Plus operation.
-					
-					result <= std_logic_vector(unsigned(memory) + unsigned(value) + "00000001");
-					
-				when others =>
-					result <= (others => '0');
-
-			end case;
 		end if;
 	end process;
 	

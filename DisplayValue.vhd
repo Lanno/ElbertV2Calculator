@@ -24,15 +24,15 @@ USE ieee.numeric_std.ALL;
 entity DisplayValue is
 	port (
 		clock : in std_logic;
-		value : in std_logic_vector(7 downto 0);
-		binaryValue, decimalValue : out std_logic_vector(7 downto 0);
-		digitSelector : out std_logic_vector(2 downto 0)
+		value : in unsigned(7 downto 0);
+		binaryValue, decimalValue : out unsigned(7 downto 0);
+		digitSelector : out unsigned(2 downto 0)
 	);
 		
 end DisplayValue;
 
 architecture Behavioral of DisplayValue is
-	signal valueTemp : std_logic_vector(7 downto 0);
+	signal valueTemp : unsigned(7 downto 0);
 	
 begin
 	valueTemp <= not value;

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Jun 08 01:46:17 2017
+// Written by: Map P.20131013 on Thu Jun 08 17:28:45 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -26,6 +26,9 @@ COMP "clock" LOCATE = SITE "P129" LEVEL 1;
 COMP "digitSelector<0>" LOCATE = SITE "P124" LEVEL 1;
 COMP "digitSelector<1>" LOCATE = SITE "P121" LEVEL 1;
 COMP "digitSelector<2>" LOCATE = SITE "P120" LEVEL 1;
+COMP "divide" LOCATE = SITE "P77" LEVEL 1;
+PIN divide_pin<0> = BEL "divide" PINNAME PAD;
+PIN "divide_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "equals" LOCATE = SITE "P76" LEVEL 1;
 PIN equals_pin<0> = BEL "equals" PINNAME PAD;
 PIN "equals_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
@@ -37,6 +40,12 @@ COMP "dipSwitches<4>" LOCATE = SITE "P64" LEVEL 1;
 COMP "dipSwitches<5>" LOCATE = SITE "P68" LEVEL 1;
 COMP "dipSwitches<6>" LOCATE = SITE "P69" LEVEL 1;
 COMP "dipSwitches<7>" LOCATE = SITE "P70" LEVEL 1;
+COMP "multiply" LOCATE = SITE "P78" LEVEL 1;
+PIN multiply_pin<0> = BEL "multiply" PINNAME PAD;
+PIN "multiply_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "subtract" LOCATE = SITE "P79" LEVEL 1;
+PIN subtract_pin<0> = BEL "subtract" PINNAME PAD;
+PIN "subtract_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 NET "clock_BUFGP/IBUFG" PERIOD = 1000 ns HIGH 50%;
 SCHEMATIC END;
 

@@ -41,10 +41,19 @@ NET "digitSelector(0)" LOC = P124;
 NET "clock" LOC = P129  | IOSTANDARD = LVCMOS33 | PERIOD = 1MHz;
 
 NET "plus" LOC = P80;
+NET "subtract" LOC = P79;
+NET "multiply" LOC = P78;
+NET "divide" LOC = P77;
 NET "equals" LOC = P76;
 
 NET "plus" PULLUP;
+NET "subtract" PULLUP;
+NET "multiply" PULLUP;
+NET "divide" PULLUP;
 NET "equals" PULLUP;
 
 NET "plus" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "subtract" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "multiply" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "divide" CLOCK_DEDICATED_ROUTE = FALSE;
 NET "equals" CLOCK_DEDICATED_ROUTE = FALSE;

@@ -23,9 +23,9 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity UpdateDisplay is
 	port (clock : in std_logic;
-			number : in std_logic_vector(7 downto 0);
-			display : out std_logic_vector(7 downto 0);
-			displaySelector : out std_logic_vector(2 downto 0));
+			number : in unsigned(7 downto 0);
+			display : out unsigned(7 downto 0);
+			displaySelector : out unsigned(2 downto 0));
 end UpdateDisplay;
 
 architecture Behavioral of UpdateDisplay is
@@ -33,13 +33,13 @@ architecture Behavioral of UpdateDisplay is
 		port (
 		clk: in std_logic;
 		rfd: out std_logic;
-		dividend: in std_logic_vector(7 downto 0);
-		divisor: in std_logic_vector(7 downto 0);
-		quotient: out std_logic_vector(7 downto 0);
-		fractional: out std_logic_vector(7 downto 0));
+		dividend: in unsigned(7 downto 0);
+		divisor: in unsigned(7 downto 0);
+		quotient: out unsigned(7 downto 0);
+		fractional: out unsigned(7 downto 0));
 	end component;
 	
-	signal onesDigit, tensDigit, tensDigitTemp, hundredsDigit : std_logic_vector(7 downto 0);
+	signal onesDigit, tensDigit, tensDigitTemp, hundredsDigit : unsigned(7 downto 0);
 	
 begin	
 	divider1 : divide 

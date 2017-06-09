@@ -9,31 +9,31 @@ Target Device  : xc3s50a
 Target Package : tq144
 Target Speed   : -5
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Thu Jun 08 01:46:16 2017
+Mapped Date    : Thu Jun 08 17:28:43 2017
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:           688 out of   1,408   48%
-  Number of 4 input LUTs:               418 out of   1,408   29%
+  Number of Slice Flip Flops:           683 out of   1,408   48%
+  Number of 4 input LUTs:               448 out of   1,408   31%
 Logic Distribution:
-  Number of occupied Slices:            469 out of     704   66%
-    Number of Slices containing only related logic:     469 out of     469 100%
-    Number of Slices containing unrelated logic:          0 out of     469   0%
+  Number of occupied Slices:            486 out of     704   69%
+    Number of Slices containing only related logic:     486 out of     486 100%
+    Number of Slices containing unrelated logic:          0 out of     486   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         459 out of   1,408   32%
-    Number used as logic:               418
-    Number used as a route-thru:         41
+  Total Number of 4 input LUTs:         490 out of   1,408   34%
+    Number used as logic:               448
+    Number used as a route-thru:         42
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 30 out of     108   27%
-  Number of BUFGMUXs:                     3 out of      24   12%
+  Number of bonded IOBs:                 33 out of     108   30%
+  Number of BUFGMUXs:                     1 out of      24    4%
 
-Average Fanout of Non-Clock Nets:                1.79
+Average Fanout of Non-Clock Nets:                1.85
 
 Peak Memory Usage:  250 MB
 Total REAL time to MAP completion:  1 secs 
@@ -1728,7 +1728,9 @@ Section 6 - IOB Properties
 | dipSwitches<5>                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
 | dipSwitches<6>                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
 | dipSwitches<7>                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| divide                             | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
 | equals                             | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| multiply                           | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
 | plus                               | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
 | sevenSegmentDisplay<0>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | sevenSegmentDisplay<1>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
@@ -1738,6 +1740,7 @@ Section 6 - IOB Properties
 | sevenSegmentDisplay<5>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | sevenSegmentDisplay<6>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | sevenSegmentDisplay<7>             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| subtract                           | IBUF             | INPUT     | LVCMOS25             |       |          |         |              | PULLUP   | 0 / 0    |                  |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs
