@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-BGEEPIU::  Thu Jun 08 17:28:47 2017
+DESKTOP-BGEEPIU::  Thu Jun 08 17:46:15 2017
 
 par -w -intstyle ise -ol high -t 1 Calculator_map.ncd Calculator.ncd
 Calculator.pcf 
@@ -79,10 +79,10 @@ Phase 7.8  Global Placement
 ..................................................................................................
 .......
 .......
-Phase 7.8  Global Placement (Checksum:6b532795) REAL time: 1 secs 
+Phase 7.8  Global Placement (Checksum:6b532795) REAL time: 2 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:6b532795) REAL time: 1 secs 
+Phase 8.5  Local Placement Optimization (Checksum:6b532795) REAL time: 2 secs 
 
 Phase 9.18  Placement Optimization
 Phase 9.18  Placement Optimization (Checksum:7e180443) REAL time: 2 secs 

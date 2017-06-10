@@ -11,5 +11,14 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/Calculator.vhd&quot; into library work</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayDriver.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayValue.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd&quot; into library work</arg>
+</msg>
+
 </messages>
 

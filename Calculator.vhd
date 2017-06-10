@@ -32,7 +32,7 @@ entity Calculator is
 end Calculator;
 
 architecture Behavioral of Calculator is
-	signal memory, value, prevSwitches : unsigned(7 downto 0);
+	signal memory, value, prevSwitches : unsigned(7 downto 0) := (others => '0');
 
 	signal operator : integer := 0;
 
