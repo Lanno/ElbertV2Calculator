@@ -1,8 +1,0 @@
-EN updatedisplay NULL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" sub00/vhpl02 1496969164
-EN displayvalue NULL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayValue.vhd" sub00/vhpl04 1496969166
-EN displaydriver NULL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayDriver.vhd" sub00/vhpl00 1496969162
-EN calculator NULL "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/Calculator.vhd" sub00/vhpl06 1496969168
-AR updatedisplay behavioral "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/UpdateDisplay.vhd" sub00/vhpl03 1496969165
-AR displayvalue behavioral "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayValue.vhd" sub00/vhpl05 1496969167
-AR calculator behavioral "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/Calculator.vhd" sub00/vhpl07 1496969169
-AR displaydriver behavioral "C:/Users/noluc/Documents/Xilinx ISE Projects/BinaryCalculator/DisplayDriver.vhd" sub00/vhpl01 1496969163

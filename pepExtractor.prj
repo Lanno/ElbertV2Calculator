@@ -1,4 +1,0 @@
-work	"DisplayDriver.vhd"
-work	"ReadDipSwitches.vhd"
-work	"UpdateDisplay.vhd"
-work	"ipcore_dir/divide.vhd"

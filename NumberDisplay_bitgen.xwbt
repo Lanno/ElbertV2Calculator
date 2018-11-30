@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\noluc\Documents\Xilinx ISE Projects\BinaryCalculator\NumberDisplay.ncd
-OUTFILE=C:\Users\noluc\Documents\Xilinx ISE Projects\BinaryCalculator\NumberDisplay.bit
-FAMILY=Spartan3A and Spartan3AN
-PART=xc3s50a-5tq144
-WORKINGDIR=C:\Users\noluc\Documents\Xilinx ISE Projects\BinaryCalculator
-LICENSE=WebPack
-USER_INFO=211333447_0_0_015
